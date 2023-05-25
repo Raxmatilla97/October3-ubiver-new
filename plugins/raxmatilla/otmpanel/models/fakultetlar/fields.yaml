@@ -1,0 +1,187 @@
+tabs:
+    fields:
+        desc:
+            label: "Asosiy yozma ma'lumotlar"
+            size: giant
+            span: full
+            type: richeditor
+            tab: "Asosiy ma'lumotlar qismi"
+        files_repeat:
+            label: "Ko'p yuklash mumkin bo'lgan fayllar"
+            prompt: "Yangi fayl qo'shish"
+            displayMode: default
+            span: auto
+            type: repeater
+            tab: 'Fayllarni yuklash qismi'
+            form:
+                fields:
+                    file_name:
+                        label: 'Faylni nomlanishi'
+                        span: left
+                        required: 1
+                        type: text
+                    file:
+                        label: 'Faylni yuklang'
+                        mode: file
+                        imageWidth: '200'
+                        useCaption: true
+                        thumbOptions:
+                            mode: crop
+                            extension: auto
+                        maxFilesize: '1'
+                        maxFiles: '1'
+                        span: auto
+                        type: fileupload
+        ppt_embed:
+            label: 'PPT-X PowerPoint yuklash'
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            maxFilesize: '10'
+            span: auto
+            type: fileupload
+            tab: 'Fayllarni yuklash qismi'
+        pdf_embed:
+            label: 'PDF fayl yuklash'
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            maxFilesize: '5'
+            span: right
+            type: fileupload
+            tab: 'Fayllarni yuklash qismi'
+        xodimlar_repeat:
+            label: "Fakultet xodimlari to'g'risida"
+            prompt: "Yangi xodim qo'shish"
+            displayMode: default
+            span: full
+            type: repeater
+            tab: 'Fakultet xodimlari'
+            form:
+                fields:
+                    fish:
+                        label: 'Familya ism sharifi'
+                        span: auto
+                        type: text
+                    surat:
+                        label: 'Xodim surati'
+                        mode: image
+                        imageWidth: '200'
+                        useCaption: true
+                        thumbOptions:
+                            mode: crop
+                            extension: auto
+                        maxFilesize: '1'
+                        span: auto
+                        type: fileupload
+                    lavozim:
+                        label: Lavozimi
+                        span: auto
+                        type: text
+                    is_active:
+                        label: Aktivlashtirish
+                        span: auto
+                        type: switch
+        boshliq_repeat:
+            label: "Fakultet dekani haqida ma'lumotlar"
+            prompt: "Yangi dekan qo'shish"
+            maxItems: '1'
+            displayMode: default
+            span: full
+            type: repeater
+            tab: 'Dekan haqida'
+            form:
+                fields:
+                    surat_boshliq:
+                        label: "Fakultet dekani haqida ma'lumotlar"
+                        mode: file
+                        useCaption: true
+                        thumbOptions:
+                            mode: crop
+                            extension: auto
+                        span: auto
+                        type: fileupload
+                    fish:
+                        label: 'Familya ism sharifi'
+                        span: auto
+                        required: 1
+                        type: text
+                    ozi_haqida:
+                        label: 'Dekan haqida'
+                        size: large
+                        span: left
+                        type: textarea
+                    ilmiy_darajasi:
+                        label: 'Ilmiy darajasi'
+                        span: right
+                        required: 1
+                        type: text
+                    email:
+                        label: 'Email manzili'
+                        span: right
+                        type: email
+                    tell:
+                        label: Number
+                        span: right
+                        type: number
+        gallereya:
+            label: 'Fakultet haqida foto lavhalar'
+            mode: image
+            imageWidth: '600'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            maxFilesize: '1'
+            span: full
+            type: fileupload
+            tab: Gallereya
+fields:
+    nomlanishi:
+        label: 'Fakultetning nomlanishi'
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: 'Fakultetning saytdagi manzili: (Tegilmasin! avtomatik yoziladi)'
+        span: auto
+        required: 1
+        preset:
+            field: nomlanishi
+            type: slug
+        type: text
+    img_logo:
+        label: Logotip
+        mode: image
+        imageWidth: '200'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        maxFilesize: '1'
+        span: auto
+        type: fileupload
+    fakultet_youtube:
+        label: 'Youtubedan joylanadigan video'
+        span: auto
+        type: text
+    img_fon:
+        label: 'Fakultetning umumiy surati'
+        mode: image
+        imageWidth: '1080'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        maxFilesize: '2'
+        maxFiles: '1'
+        span: auto
+        type: fileupload
+    is_active:
+        label: 'Sahifani aktivlashtirish'
+        span: auto
+        type: switch

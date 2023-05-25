@@ -1,0 +1,12 @@
+list: $/raxmatilla/otmpanel/models/kafedralar/columns.yaml
+modelClass: raxmatilla\OtmPanel\Models\Kafedralar
+title: KafedralarController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'raxmatilla/otmpanel/kafedralarcontroller/update/:id'

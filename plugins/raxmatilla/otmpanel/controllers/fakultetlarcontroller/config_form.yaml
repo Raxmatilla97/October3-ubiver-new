@@ -1,0 +1,10 @@
+name: FakultetlarController
+form: $/raxmatilla/otmpanel/models/fakultetlar/fields.yaml
+modelClass: raxmatilla\OtmPanel\Models\Fakultetlar
+defaultRedirect: raxmatilla/otmpanel/fakultetlarcontroller
+create:
+    redirect: 'raxmatilla/otmpanel/fakultetlarcontroller/update/:id'
+    redirectClose: raxmatilla/otmpanel/fakultetlarcontroller
+update:
+    redirect: raxmatilla/otmpanel/fakultetlarcontroller
+    redirectClose: raxmatilla/otmpanel/fakultetlarcontroller

@@ -1,0 +1,12 @@
+list: $/raxmatilla/otmpanel/models/fakultetlar/columns.yaml
+modelClass: raxmatilla\OtmPanel\Models\Fakultetlar
+title: FakultetlarController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'raxmatilla/otmpanel/fakultetlarcontroller/update/:id'

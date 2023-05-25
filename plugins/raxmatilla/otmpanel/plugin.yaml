@@ -1,0 +1,20 @@
+plugin:
+    name: 'raxmatilla.otmpanel::lang.plugin.name'
+    description: 'raxmatilla.otmpanel::lang.plugin.description'
+    author: 'Raxmatilla Fayziyev RAXI-DEV'
+    icon: oc-icon-bank
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: OTM-PANEL
+        url: raxmatilla/otmpanel/fakultetlarcontroller
+        icon: icon-life-ring
+        sideMenu:
+            side-menu-item:
+                label: Fakultetlar
+                url: raxmatilla/otmpanel/fakultetlarcontroller
+                icon: icon-sitemap
+            side-menu-item2:
+                label: Kafedralar
+                url: raxmatilla/otmpanel/kafedralarcontroller
+                icon: icon-sitemap

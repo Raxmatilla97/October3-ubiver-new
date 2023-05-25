@@ -1,0 +1,10 @@
+name: KafedralarController
+form: $/raxmatilla/otmpanel/models/kafedralar/fields.yaml
+modelClass: raxmatilla\OtmPanel\Models\Kafedralar
+defaultRedirect: raxmatilla/otmpanel/kafedralarcontroller
+create:
+    redirect: 'raxmatilla/otmpanel/kafedralarcontroller/update/:id'
+    redirectClose: raxmatilla/otmpanel/kafedralarcontroller
+update:
+    redirect: raxmatilla/otmpanel/kafedralarcontroller
+    redirectClose: raxmatilla/otmpanel/kafedralarcontroller
