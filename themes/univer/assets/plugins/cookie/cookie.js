@@ -1,8 +1,8 @@
 $(function(e){
   'use strict';
 	$('body').ihavecookies({
-		title: 'Accept Cookies & Privacy Policy?',
-		message: 'There are no cookies used on this site, but if there were this message could be customised to provide more details. Click the <strong>accept</strong> button below to see the optional callback in action...',
+		title: 'Sayt test rejimida ishlamoqda!',
+		message: "Assalomu allaykum, qadirli foydalanuvchi, sizni saytda ko'rib turganimizdan hursandmiz, sayt to'liq qayta ishlanmoqda va yangilanishlar qo'shib borilyapti, Agarda biron hatoliklar vujudga kelsa <a href='https://t.me/Raxmatilla_Fayziyev'> Bu haqda xabar berishingiz mumkin.</a>",
 		delay: 600,
 		expires: 1,
 		link: '#privacy',
@@ -12,8 +12,8 @@ $(function(e){
 			console.log(myPreferences);
 		},
 		uncheckBoxes: true,
-		acceptBtnLabel: 'Accept Cookies',
-		moreInfoLabel: 'More information'
+		acceptBtnLabel: 'Tushunarli 😊',
+		moreInfoLabel: ''
 	});
 
 	if ($.fn.ihavecookies.preference('marketing') === true) {

@@ -1,0 +1,75 @@
+<!--Section-->
+		<section class="sptb">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="video-img">
+							<img src="https://old.cspi.uz/storage/app/media/2019-%20yilgi/09.2019/IMG_20190928_083117_275.jpg" alt="img" class="cover-image br-7">
+							<a class="mt-6 d-block video-btn mx-auto" href="#Geeks2" data-bs-toggle="modal" ><i class="fa fa-play text-white"></i></a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="video-section mt-8 ms-lg-5 pt-5">
+							<div class="">
+								<h6 class="text-uppercase mb-2 text-primary"><i class="fe fe-book"></i> UNIVERSITET HAQIDA QISQACHA</h6>
+								<h2 class="mt-0 font-weight-bold">UNIVERSITET TARIXI </h2>
+							</div>
+							<p class="leading-normal mt-4" style="font-size: 17px;"> Institut 0‘zbekiston Respublikasi Prezidentining <strong>2017-yil 27-iyuldagi PQ-3152 </strong>sonli <strong>"Toshkent viloyati Chirchiq davlat pedagogika institutini tashkil etish to`g`risida"</strong>gi Qaroriga asosan maktabgacha, maktab va maktabdan tashqari taʼlim muassasalarining tarbiyachilar, boshlanglch sinf ayniqsa aniq fanlar va chet tillari bo‘yicha o'qituvchilarga bo‘lgan ehtiyojlarini qondirish, tumanlar va qishloq joylaridagi taʼlim muassasalarini yuqori malakali pedagog kadrlar bilan ta'minlash hamda xalqaro standartlar darajasiga mos oliy maʼIumotli pedagogik kadrlar tayyorlash tizimini joylarda tashkil etishni yanada takomillashtirish va ta'lim sifatini yaxshilash maqsadida tashkil etildi.</p>
+							<a class="btn btn-primary text-white mt-3"  href="javascript:void(0)"> <i class="fe fe-chevron-right"></i> Ko'proq o'qish</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Section-->
+<style>
+        .bs-example {
+            margin: 20px;
+        }
+         
+        .modal-content iframe {
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+
+       
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            var url = $("#Geeks3").attr('src');
+            $("#Geeks2").on('hide.bs.modal', function() {
+                $("#Geeks3").attr('src', '');
+            });
+            $("#Geeks2").on('show.bs.modal', function() {
+                $("#Geeks3").attr('src', url);
+            });
+        });
+    </script>
+
+     <div class="bs-example">
+           
+ 
+            <div id="Geeks2" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="width:860px; margin: auto;">
+                        <div class="modal-header">
+                          <h4 class="modal-title">OTM RTT MARKAZI TOMONIDAN SAYT YARATILGAN</h4>
+                            <button type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-hidden="true">×</button>
+                          
+                        </div>
+                        <div class="modal-body">                     
+                            <iframe  id="Geeks3" width="780" height="460" src="https://www.youtube.com/embed/mtv8WkYyK0s" title="Chirchiq shahrining ajoyib va betakror ko&#39;rinishi!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+          </div>
+      </div>

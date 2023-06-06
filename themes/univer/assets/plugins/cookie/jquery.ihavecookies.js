@@ -42,19 +42,27 @@
         var settings = $.extend({
             cookieTypes: [
                 {
-                    type: 'Site Preferences',
-                    value: 'preferences',
-                    description: 'These are cookies that are related to your site preferences, e.g. remembering your username, site colours, etc.'
+                    type: 'Yangiliklar va E\'lonlar',
+                    // value: 'preferences',
+                    // description: 'These are cookies that are related to your site preferences, e.g. remembering your username, site colours, etc.'
                 },
                 {
-                    type: 'Analytics',
-                    value: 'analytics',
-                    description: 'Cookies related to site visits, browser types, etc.'
+                    type: 'Fakultetlarda',
+                    // value: 'analytics',
+                    // description: 'Cookies related to site visits, browser types, etc.'
                 },
                 {
-                    type: 'Marketing',
-                    value: 'marketing',
-                    description: 'Cookies related to marketing, e.g. newsletters, social media, etc'
+                    type: 'Yo\'nalishlar qo\'shildi',
+                    // value: 'marketing',
+                    // description: 'Cookies related to marketing, e.g. newsletters, social media, etc'
+                },
+                {
+                    type: "Ko'pgina o'zgarishlar",
+                   
+                },
+                {
+                    type: "Kafedralarda",
+                   
                 }
             ],
             title: 'Cookies & Privacy',
@@ -64,7 +72,7 @@
             expires: 30,
             moreInfoLabel: 'More information',
             acceptBtnLabel: 'Accept Cookies',
-            advancedBtnLabel: 'Customise Cookies',
+            advancedBtnLabel: "Qanday o'zgarishlar bo'ldi?",
             onAccept: function(){},
             uncheckBoxes: false
         }, options);
@@ -74,7 +82,7 @@
         if (!myCookie || !myCookiePrefs) {
 
             // Set the 'necessary' cookie type checkbox which can not be unchecked
-            var cookieTypes = '<li><input type="checkbox" name="gdpr[]" value="necessary" checked="checked" disabled="disabled"> <label title="These are cookies that are essential for the website to work correctly.">Necessary</label></li>';
+            var cookieTypes = '<li><input type="checkbox" name="gdpr[]" value="necessary" checked="checked" disabled="disabled"> <label title="These are cookies that are essential for the website to work correctly.">Yangilangan dvijok</label></li>';
 
             // Generate list of cookie type checkboxes
             $.each(settings.cookieTypes, function(index, field) {
@@ -88,7 +96,7 @@
             });
 
             // Display cookie message on page
-            var cookieMessage = '<div id="gdpr-cookie-message"><h4>' + settings.title + '</h4><p>' + settings.message + ' <a href="' + settings.link + '">' + settings.moreInfoLabel + '</a><div id="gdpr-cookie-types" style="display:none;"><h5>Select cookies to accept</h5><ul>' + cookieTypes + '</ul></div><p><button id="gdpr-cookie-accept" type="button">' + settings.acceptBtnLabel + '</button><button id="gdpr-cookie-advanced" type="button">' + settings.advancedBtnLabel + '</button></p></div>';
+            var cookieMessage = '<div id="gdpr-cookie-message"><h4>' + settings.title + '</h4><p>' + settings.message + ' <a href="' + settings.link + '">' + settings.moreInfoLabel + '</a><div id="gdpr-cookie-types" style="display:none;"><h5>O\'zgarishlar haqida qisqacha</h5><ul>' + cookieTypes + '</ul></div><p><button id="gdpr-cookie-accept" type="button">' + settings.acceptBtnLabel + '</button><button id="gdpr-cookie-advanced" type="button">' + settings.advancedBtnLabel + '</button></p></div>';
             setTimeout(function(){
                 $($element).append(cookieMessage);
                 $('#gdpr-cookie-message').hide().fadeIn('slow');
